@@ -1,61 +1,53 @@
 @charset "UTF-8";
 
-// 1. Vendors - files like bootstrap etc.
-@import "vendor/normalize";
+// 1. Vendor - files from outsorces, like normalize, bootstrap etc.
+@import "waw/vendor/normalize";
 
-// 2. Utils - configuration and helpers
-@import "utils/variables";
-@import "utils/functions";
-@import "utils/mixins";
-@import "utils/z-index";
-@import "utils/media-queries";
+// 2. Util - configuration and helpers
+@import "waw/util/var";
+@import "waw/util/func";
+@import "waw/util/mixin";
+@import "waw/util/z-index";
+@import "waw/util/media";
+@import "waw/util/font";
+@import "waw/util/print";
 
-// 3. Base - some basic stuff
-@import "base/base";
-@import "base/fonts";
-@import "base/tags";
-@import "base/newtags";
-@import "base/print";
-@import "base/media-visibility";
-@import "base/quickmark/margins";
-@import "base/quickmark/paddings";
-@import "base/quickmark/fonts";
-@import "base/quickmark/sizes";
-@import "base/quickmark/colors";
-@import "base/quickmark/floats";
-@import "base/quickmark/backgrounds";
-@import "base/quickmark/besides";
+// 3. Mark - simple classes for quickmark
+@import "waw/mark/margin";
+@import "waw/mark/padding";
+@import "waw/mark/font";
+@import "waw/mark/size";
+@import "waw/mark/color";
+@import "waw/mark/float";
+@import "waw/mark/background";
+@import "waw/mark/beside";
+@import "waw/mark/visibility";
 
-// 4. Layout - some related sections
-@import "layouts/topbar";
-@import "layouts/footer";
-@import "layouts/grid";
-@import "layouts/flexgrid";
-@import "layouts/sidebar";
-@import "layouts/modal";
-@import "layouts/alerts";
-@import "layouts/viewer";
+// 4. Sector - some related sections 
+@import "waw/sector/base";
 
-// 5. Modules - reuseble modules
-@import "modules/base/headings";
-@import "modules/base/links";
-@import "modules/base/lists";
-@import "modules/base/buttons";
-@import "modules/base/code";
-@import "modules/base/textparts";
-@import "modules/base/forms";
-@import "modules/base/tables";
-@import "modules/base/badges";
-@import "modules/base/breadcrumbs";
-@import "modules/base/divider";
-@import "modules/base/forms-controls";
-@import "modules/complex/accordion";
-@import "modules/complex/dropdown";
-@import "modules/complex/parallax";
-@import "modules/complex/pagination";
-@import "modules/complex/progress";
-@import "modules/complex/spinner";
-@import "modules/complex/tabs";
-@import "modules/complex/tooltips";
+// 5. Unit - reuseble little parts of markdown
+@import "waw/unit/heading";
+@import "waw/unit/link";
+@import "waw/unit/list";
+@import "waw/unit/button";
+@import "waw/unit/code";
+@import "waw/unit/textpart";
+@import "waw/unit/form";
+@import "waw/unit/table";
+@import "waw/unit/badge";
+@import "waw/unit/breadcrumb";
+@import "waw/unit/divider";
+@import "waw/unit/scrollbar";
+@import "waw/unit/trash";
+@import "waw/unit/forms-control";
+@import "waw/unit/hard/accordion";
+@import "waw/unit/hard/dropdown";
+@import "waw/unit/hard/parallax";
+@import "waw/unit/hard/pagination";
+@import "waw/unit/hard/progress";
+@import "waw/unit/hard/spinner";
+@import "waw/unit/hard/tabs";
+@import "waw/unit/hard/tooltip";
 
 // 6. Page - specific styles for separete pages
