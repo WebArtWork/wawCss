@@ -29,13 +29,13 @@
 
 // 5. Elements - reuseble little parts of markdown
 @import "elements/buttons";
+@import "elements/inputs";
+@import "elements/checkradio";
 @import "elements/heading";
 @import "elements/link";
 @import "elements/list";
 @import "elements/textpart";
-@import "elements/inputs";
 @import "elements/trash";
-@import "elements/forms-control";
 
 @import "elements/complex/scrollbar";
 
