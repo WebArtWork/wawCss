@@ -23,3 +23,19 @@ blockquote {
 		border-left: 2px solid $danger;
 	}
 }
+
+// split line
+hr {
+	margin: $space 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $gray;
+	padding: 0;
+}
+
+// text vars
+b,
+strong {
+	font-weight: 500;
+}
