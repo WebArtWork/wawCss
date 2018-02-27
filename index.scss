@@ -1,53 +1,41 @@
 @charset "UTF-8";
 
 // 1. Vendor - files from outsorces, like normalize, bootstrap etc.
-@import "waw/vendor/normalize";
+@import "vendor/normalize";
 
 // 2. Util - configuration and helpers
-@import "waw/util/var";
-@import "waw/util/func";
-@import "waw/util/mixin";
-@import "waw/util/z-index";
-@import "waw/util/media";
-@import "waw/util/font";
-@import "waw/util/print";
+@import "utils/var";
+@import "utils/func";
+@import "utils/mixin";
+@import "utils/z-index";
+@import "utils/media";
+@import "utils/font";
+@import "utils/print";
 
 // 3. Mark - simple classes for quickmark
-@import "waw/mark/margin";
-@import "waw/mark/padding";
-@import "waw/mark/font";
-@import "waw/mark/size";
-@import "waw/mark/color";
-@import "waw/mark/float";
-@import "waw/mark/background";
-@import "waw/mark/beside";
-@import "waw/mark/visibility";
+@import "atoms/margin";
+@import "atoms/padding";
+@import "atoms/font";
+@import "atoms/size";
+@import "atoms/color";
+@import "atoms/float";
+@import "atoms/background";
+@import "atoms/beside";
+@import "atoms/visibility";
 
 // 4. Sector - some related sections 
-@import "waw/sector/base";
+@import "layouts/base";
 
-// 5. Unit - reuseble little parts of markdown
-@import "waw/unit/heading";
-@import "waw/unit/link";
-@import "waw/unit/list";
-@import "waw/unit/button";
-@import "waw/unit/code";
-@import "waw/unit/textpart";
-@import "waw/unit/form";
-@import "waw/unit/table";
-@import "waw/unit/badge";
-@import "waw/unit/breadcrumb";
-@import "waw/unit/divider";
-@import "waw/unit/scrollbar";
-@import "waw/unit/trash";
-@import "waw/unit/forms-control";
-@import "waw/unit/hard/accordion";
-@import "waw/unit/hard/dropdown";
-@import "waw/unit/hard/parallax";
-@import "waw/unit/hard/pagination";
-@import "waw/unit/hard/progress";
-@import "waw/unit/hard/spinner";
-@import "waw/unit/hard/tabs";
-@import "waw/unit/hard/tooltip";
+// 5. elements - reuseble little parts of markdown
+@import "elements/heading";
+@import "elements/link";
+@import "elements/list";
+@import "elements/button";
+@import "elements/textpart";
+@import "elements/form";
+@import "elements/trash";
+@import "elements/forms-control";
+
+@import "elements/complex/scrollbar";
 
 // 6. Page - specific styles for separete pages
