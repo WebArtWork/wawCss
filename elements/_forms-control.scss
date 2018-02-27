@@ -1,158 +1,163 @@
 // 1 radio  and checkboxes buttons
 .mark {
-    display: inline-table;
+	display: inline-table;
 
-    width: auto;
-    margin-bottom: 1em;
+	width: auto;
+	margin-bottom: 1em;
 
-    cursor: pointer;
-    -webkit-transition: all 0.25s;
-            transition: all 0.25s;
+	cursor: pointer;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
 
-    line-height: 1;
-    // hide inputs inside
-    input {
-        display: none;
-    }
-    // fake input wrapper
-    &_sign {
-        display: table-cell;
+	line-height: 1; // hide inputs inside
+	input {
+		display: none;
+	} // fake input wrapper
+	&_sign {
+		display: table-cell;
 
-        vertical-align: top;
-        // fake input
-        span {
-            display: inline-block;
+		vertical-align: top; // fake input
+		span {
+			display: inline-block;
 
-            width: 0.9em;
-            height: 0.9em;
-            margin-right: 0.5em;
+			width: 0.9em;
+			height: 0.9em;
+			margin-right: 0.5em;
 
-            -webkit-transition: all 0.25s;
-                    transition: all 0.25s;
+			-webkit-transition: all 0.25s;
+			transition: all 0.25s;
 
-            border: 1px solid $gray-d;
-        }
-    }
-    &_text {
-        display: table-cell;
+			border: 1px solid $gray;
+		}
+	}
+	&_text {
+		display: table-cell;
 
-        padding-right: 20px;
+		padding-right: 20px;
 
-        vertical-align: top;
-        span {
-            display: inline-block;
-        }
-    }
-    // Modifier for radio buttons
-    &.m_radio {
-        .mark_sign {
-            span {
-                border-radius: 50%;
-            }
-        }
-        .mark-text {
-            vertical-align: top;
-        }
-    }
+		vertical-align: top;
+		span {
+			display: inline-block;
+		}
+	} // Modifier for radio buttons
+	&.m_radio {
+		.mark_sign {
+			span {
+				border-radius: 50%;
+			}
+		}
+		.mark-text {
+			vertical-align: top;
+		}
+	}
 }
 
 // if checked 
 input:checked ~ .mark_sign span {
-    border: 1px solid $primary-d;
-    background: $primary-d;
-    -webkit-box-shadow: inset 0 0 0 3px $white;
-            box-shadow: inset 0 0 0 3px $white;
+	border: 1px solid $primary;
+	background: $primary;
+	-webkit-box-shadow: inset 0 0 0 3px $white;
+	box-shadow: inset 0 0 0 3px $white;
 }
 
 input:checked ~ .mark_text {
-    color: $primary-d;
+	color: $primary;
 }
 
 
 // if disabled
 input:disabled ~ .mark_sign span {
-    cursor: not-allowed;
+	cursor: not-allowed;
 
-    opacity: 0.8;
-    border: 1px solid $gray;
+	opacity: 0.8;
+	border: 1px solid $gray;
 }
 
 input:disabled ~ .mark_text {
-    cursor: not-allowed;
+	cursor: not-allowed;
 
-    opacity: 0.8;
-    color: $gray;
+	opacity: 0.8;
+	color: $gray;
 }
 
 
 // 2 input type range
 // base
 .range-wrap {
-    line-height: 0;
+	line-height: 0;
 }
-input[type=range] {
-    width: 100%;
-    margin: 0 0 1em;
 
-    -webkit-appearance: none;
+input[type=range] {
+	width: 100%;
+	margin: 0 0 1em;
+
+	-webkit-appearance: none;
 }
+
 // track
 input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 0.2em;
+	width: 100%;
+	height: 0.2em;
 
-    cursor: pointer;
-    transition: all 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    background: $gray-l;
+	background: $gray;
 }
+
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: $gray;
+	background: $gray;
 }
+
 input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 0.2em;
+	width: 100%;
+	height: 0.2em;
 
-    cursor: pointer;
-    transition: all 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    border: 0.2px solid #010101;
-    background: $gray-l;
+	border: 0.2px solid #010101;
+	background: $gray;
 }
+
 input[type=range]:focus::-moz-range-track {
-    background: $gray;
+	background: $gray;
 }
+
 // thumb
 input[type=range]::-webkit-slider-thumb {
-    width: 1em;
-    height: 1em;
-    margin-top: -0.4em;
+	width: 1em;
+	height: 1em;
+	margin-top: -0.4em;
 
-    cursor: pointer;
-    transition: all 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    border-radius: 50%;
-    background: $primary;
+	border-radius: 50%;
+	background: $primary;
 
-    -webkit-appearance: none;
-    &::focus {
-        background: green;
-    }
+	-webkit-appearance: none;
+	&::focus {
+		background: green;
+	}
 }
+
 input[type=range]:focus::-webkit-slider-thumb {
-    background: $primary-d;
+	background: $primary;
 }
+
 input[type=range]::-moz-range-thumb {
-    width: 1em;
-    height: 1em;
-    margin-top: -0.4em;
+	width: 1em;
+	height: 1em;
+	margin-top: -0.4em;
 
-    cursor: pointer;
-    transition: all 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    border-radius: 50%;
-    background: $primary;
+	border-radius: 50%;
+	background: $primary;
 }
+
 input[type=range]:focus::-moz-range-thumb {
-    background: $primary-d;
+	background: $primary;
 }
