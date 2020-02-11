@@ -1,0 +1,3 @@
+The folder contains several files.
+## The base file contains a large number of selectors. In general, there are entered the total values of the html master blocks.
+## The flexboxgrid2 file contains information about the use of rows and columns.
