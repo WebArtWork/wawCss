@@ -1,13 +1,58 @@
-# index.scss - main file
+• SCSS FOLDER PACK BY WAW • 
 
-The main file  should be the only Sass file from the whole code base not to begin with an underscore. This file should not contain anything but `@import` and comments.
+I. GET STARTED
+# Import app.scss to your global styles -> @import: "scss/app";
 
-*Note: when using [Eyeglass](https://github.com/sass-eyeglass/eyeglass) for distribution, it might be a fine idea to name this file `index.scss` rather than `main.scss` in order to stick to [Eyeglass modules specifications](https://github.com/sass-eyeglass/eyeglass#writing-an-eyeglass-module-with-sass-files). See [#21](https://github.com/HugoGiraudel/sass-boilerplate/issues/21) for reference.*
+II. STRUCTURE
+# atom 
+	1. display
+	2. margin
+	3. padding
+	4. size
+	5. text
+# common
+# components
+	1. buttons
+	2. forms
+	3. nav
+	4. switch
+	5. table
+# layout
+	1. base
+	2. grid
+	3. scroll
+# pages
+# utils
+	1. fonts
+	2. icons
+	3. media
+	4. vars
+	5. angular
+# vendors
+	1. normalize
 
-Reference: [Sass Guidelines](http://sass-guidelin.es/) > [Architecture](http://sass-guidelin.es/#architecture) > [Main file](http://sass-guidelin.es/#main-file)
+III. SETTINGS
+# Go to app.scss and turn on/off imports scss files
 
-Префікси:
-g_class - глобальний клас
-l_class - лейаут компонент
-m_class - модифікатор
-js_class - виключно для потреб java script
+IV. INFO
+1. atom - include atomic classes.
+2. common - include styles which appears on few pages.
+3. components - include independent blocks
+4. layout - include global layout settings
+5. pages - include style for specifically page
+6. utils - include abstract styles
+7. vendors - include imports resets, normalize, libs
+
+V. HOW TO USE COMPONENTS
+# Go to scss/components/README.md - ready made html for components
+
+VI. HTML/SCSS RULES
+# We use BEM technology but changed a little for themselves (optional)
+a. HTML
+	1. block -> "header"
+	2. element -> "header__link"
+	3. modifier -> "_active"
+b. SCSS
+	1. block -> "header {}"
+	2. element -> "&__link {}"
+	3. modifier -> "&._active {}"
