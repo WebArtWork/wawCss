@@ -20,7 +20,7 @@
 	w-card _pd  // card with padding
 	w-card__header // header card inside w-card
 
-### Atom (should turn on in file app.scss)
+### Atom (should turn on in file waw.scss)
 	1. Display
 		d-b //display-block:
 		d-ib //display-inline-block
