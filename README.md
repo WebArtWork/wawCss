@@ -1,7 +1,7 @@
 # • SCSS FOLDER PACK BY WAW •
 
 ## I. GET STARTED
-- Import app.scss to your global styles -> ```@import: "scss/waw";```
+- Import waw.scss to your global styles -> ```@import: "scss/waw";```
 
 ## II. STRUCTURE
 ### Atom
