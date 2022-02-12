@@ -19,6 +19,7 @@
 	5. w-radio
 	6. w-switch
 	7. w-table
+	8. w-card
 ### Layout
 	1. base
 	2. grid
